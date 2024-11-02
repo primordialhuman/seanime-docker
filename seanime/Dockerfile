@@ -3,7 +3,7 @@ FROM alpine:3.20.3
 WORKDIR /home/seanime
 
 ENV HOME=/home/seanime \
-    PKGVER=2.2.2
+    PKGVER=2.2.1
 
 RUN apk update && apk add --no-cache \
     qbittorrent-nox \
