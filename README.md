@@ -24,8 +24,9 @@ Ensure you have the following installed on your system:
 
    ```bash
    docker-compose up
+   ```
 
-   # 🔑 qBittorrent Configuration
+## 🔑 qBittorrent Configuration
 
 When initializing Seanime, you’ll be asked to provide **qBittorrent** details. Use the following credentials:  
 
