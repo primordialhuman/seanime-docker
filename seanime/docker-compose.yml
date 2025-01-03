@@ -1,12 +1,12 @@
 
 services:
   seanime:
-    image: primordialhuman/seanime:2.1.1
+    image: primordialhuman/seanime:2.5.2
     ports:
       - "8080:8080"
       - "43211:43211"
     volumes:
-      - ./seanime/config:/home/seanime/.config/Seanime
-      - ./seanime/config/qBittorrent:/home/seanime/.config/qBittorrent
-
+      - ./config/seanime:/home/seanime/.config/Seanime
+      - ./config/qBittorrent:/home/seanime/.config/qBittorrent
+      - ./downloads:/home/seanime/Downloads
    
