@@ -54,6 +54,15 @@ Once the services are running, you can access Seanime via:
 
 ---
 
+## Remember to enable the Media Streaming inbuit for browser for other players in mobile check offical docs
+
+
+Settings > Media Streaming
+
+Enable media streaming.
+Choose the hardware acceleration method you want to use.
+If you need to, enter the FFmpeg and FFprobe binary paths. This is only required if they are not in your system PATH.
+
 ## 🎬 Stream with Jellyfin (Optional)
 
 Want to stream downloaded videos using **Jellyfin**?  
@@ -62,6 +71,8 @@ Want to stream downloaded videos using **Jellyfin**?
 2. Jellyfin will automatically pick up the files for streaming.  
 
 ---
+
+
 
 ## 🛠️ Troubleshooting
 
