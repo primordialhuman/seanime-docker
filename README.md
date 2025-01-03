@@ -1,31 +1,74 @@
-Seanime Docker Setup Guide 🚀
-=====================================
-Welcome to the Seanime setup guide! 🤝 This guide will walk you through running your own instance of Seanime using Docker. 🐳
-Prerequisites 📝
-------------------------
-Docker installed on your system 🐳. 
-Docker Compose installed 📈. 
-Quick Start ⏱️
-----------------------
-Run the Application 🚀
-Start the services using Docker Compose:
-Bash
-docker-compose up
-Configure qBittorrent 📊
-When initializing Seanime, you'll be asked for qBittorrent details. Use the following:
-Username: admin
-Password: admin123
-Port: 8080
-Set Library Path 📁
-Provide the library path based on the Docker Compose volume path, e.g., /home/seanime/Downloads
-Access the Application 📊
-Access Seanime at http://localhost:43211 (replace localhost with your server's IP if running remotely).
-Stream Downloaded Videos using Jellyfin 📺
-To stream downloaded videos using Jellyfin, change the download volume path in docker-compose.yml to the Jellyfin location. Jellyfin will then pick up the files.
-Troubleshooting 🤔
--------------------------
-Ensure all required directories for configuration and volumes are created and accessible by the Docker container.
-If there are port conflicts, make sure the necessary ports (8080 and 43211) are available or adjust the docker-compose.yml file to use alternative ports.
-Conclusion 🎉
-------------------
-You now have your own instance of Seanime up and running using Docker! 🚀 Feel free to contribute to the project or customize your instance as needed. If you encounter any issues, please open a ticket in the repository, and we'll be happy to help! 🤝
+# 🚀 Seanime Docker Setup Guide
+
+Welcome to the **Seanime** setup guide! This guide will help you set up your own Seanime instance using Docker in just a few steps. 🎉 
+
+With this guide, you can easily pull the pre-built Docker image and configure the required files on your host machine.
+
+---
+
+## 📋 Prerequisites
+
+Ensure you have the following installed on your system:
+
+- 🐳 [Docker](https://docs.docker.com/get-docker/)  
+- 🛠️ [Docker Compose](https://docs.docker.com/compose/install/)  
+
+---
+
+## ⚡ Quick Start
+
+### ▶️ Run the Application
+
+1. Clone the project or create a `docker-compose.yml` file with the required configuration.
+2. Start the services using the following command:
+
+   ```bash
+   docker-compose up
+
+   # 🔑 qBittorrent Configuration
+
+When initializing Seanime, you’ll be asked to provide **qBittorrent** details. Use the following credentials:  
+
+- **Username**: `admin`  
+- **Password**: `admin123`  
+- **Port**: `8080`  
+
+---
+
+## 📁 Library Path Setup
+
+Provide the **Library Path** as per your Docker Compose volume configuration. For example:  
+`/home/seanime/Downloads`
+
+---
+
+## 🌐 Access the Application
+
+Once the services are running, you can access Seanime via:  
+👉 **http://localhost:43211**  
+
+*(Replace `localhost` with your server’s IP if accessing remotely.)*
+
+---
+
+## 🎬 Stream with Jellyfin (Optional)
+
+Want to stream downloaded videos using **Jellyfin**?  
+
+1. Update the **download volume path** in `docker-compose.yml` to point to Jellyfin’s media location.  
+2. Jellyfin will automatically pick up the files for streaming.  
+
+---
+
+## 🛠️ Troubleshooting
+
+- 🔍 Ensure all required directories and volumes are properly created and accessible by the Docker container.  
+- ⚠️ Check for port conflicts on `8080` and `43211`. Update the `docker-compose.yml` file to use alternative ports if needed.  
+
+---
+
+## 🎉 Conclusion
+
+Congratulations! 🎊 You now have your own Seanime instance running via Docker.  
+
+💡 Feel free to customize the setup or contribute to the project. If you encounter any issues, don’t hesitate to open a ticket in the repository—we’re here to help! 😊
