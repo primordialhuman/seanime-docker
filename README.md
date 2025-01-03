@@ -17,6 +17,8 @@ Ensure you have the following installed on your system:
 
 ## ⚡ Quick Start
 
+## Clone the Repo and CD or go to seanime directory 
+
 ### ▶️ Run the Application
 
 1. Clone the project or create a `docker-compose.yml` file with the required configuration.
