@@ -29,6 +29,7 @@ password : admin123
 port : 8080
 ### -----------
 
+### Give the library path as based on docker-compose volume path  ex: /home/seanime/Downloads
 
 ###  Access the Application
 
