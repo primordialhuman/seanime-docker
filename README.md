@@ -53,7 +53,7 @@ Once the services are running, you can access Seanime via:
 
 ---
 
-## Remember to enable the Media Streaming inbuit for browser for other players in mobile check offical docs
+## Remember to enable the Media Streaming inbuilt for browser , for  external  players in mobile or other desktop  check offical docs
 
 
 Settings > Media Streaming
