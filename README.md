@@ -21,8 +21,7 @@ Ensure you have the following installed on your system:
 
 ### ▶️ Run the Application
 
-1. Clone the project or create a `docker-compose.yml` file with the required configuration.
-2. Start the services using the following command:
+1. Start the services using the following command:
 
    ```bash
    docker-compose up
